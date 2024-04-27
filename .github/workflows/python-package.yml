@@ -29,7 +29,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install flake8 pytest-cov
           python -m pip install pytest==8.1.1
-          python -m pip install pluggy==1.5.0
+          python -m pip install pluggy==1.4.0
           python -m pip install -r tests\requirements_win_mac.txt
       - name: generate astar.pyd
         run: |
