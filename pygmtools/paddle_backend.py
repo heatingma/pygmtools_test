@@ -1146,8 +1146,6 @@ def inner_prod_aff_fn(feat1, feat2):
     """
     Paddle implementation of inner product affinity function
     """
-    import pdb
-    pdb.set_trace()
     return paddle.matmul(feat1, feat2.transpose((0, 2, 1)))
 
 
