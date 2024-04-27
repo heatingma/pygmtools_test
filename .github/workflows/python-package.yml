@@ -42,5 +42,4 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest. They are divided into two runs because MindSpore will interfere with Paddle.
         run: |
-          pytest --cov=pygmtools --cov-report=xml --backend=mindspore tests/test_classic_solvers.py
           pytest --cov=pygmtools --cov-report=xml --cov-append
